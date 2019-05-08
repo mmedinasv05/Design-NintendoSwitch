@@ -1,0 +1,528 @@
+
+
+*{
+		  padding: 0;
+		  margin: 0;
+		  box-sizing: content-box;;
+}
+body{
+	background-color: #ececec;
+}
+		.containerMain{
+		  width: 100%;
+		  height: 100vh;
+		  background: #ffffff;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+		.containerNintendo{
+		  width: 700px;
+		  height: 300px;
+		  background-color: #16DDEB;
+		  border-radius: 50px;
+		  display: flex;
+		  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+		}
+		.controlLeft{
+		  width: 100px;
+		  height: 300px;
+		  background-color: #16DDEB;
+		  border-top-left-radius: 50px;
+		  border-bottom-left-radius: 50px;
+		  position: relative;
+		}
+		.screen{
+		  width: 500px;
+		  height: 280px;
+		  background-color: #131134;
+		  margin: 10px 0;
+		  border-radius: 30px;
+		  position: relative;
+		}
+		.controlRight{
+		  width: 100px;
+		  height: 300px;
+		  background-color: #16DDEB;
+		  border-top-right-radius: 50px;
+		  border-bottom-right-radius: 50px;
+		  position: relative;
+		}
+		.Line{
+			width: 100%;
+			height: 20px;
+			border: 1px solid #538396;
+			position: absolute;
+			bottom: 30px;
+		}
+		[class^='building']{
+			background-color: none;
+			position: absolute;
+			border-right: 1px solid #538396; 
+			border-left: 1px solid #538396;
+			border-top: 1px solid #538396;
+		}
+		.buildingOne{
+			width: 75px;
+			height: 30px;
+			bottom: 52px;
+			left: 20px;; 
+		}
+		.buildingTwo{
+			width: 51px;
+			height: 95px;
+			bottom: 52px;
+			left: 120px;
+		}
+		.trunk{
+			width: 1px;
+			height: 15px;
+			background-color: none;
+			position: absolute;
+			bottom: 52px;
+			left: 200px;
+			border-right: 1px solid #538396; 
+			border-left: 1px solid #538396;
+			border-top: 1px solid #538396;
+		}
+		.tree{
+			width: 20px;
+			height: 20px;
+			background-color: none;
+			position: absolute;
+			bottom: 67px;
+			left: 190px;
+			border-radius: 100%;
+			border: 1px solid green;
+		}
+		.buildingThree{
+			width: 50px;
+			height: 65px;
+			bottom: 52px;
+			left: 230px; 
+		}
+		.buildingFour{
+			width: 35px;
+			height: 95px;
+			bottom: 52px;
+			left: 320px;
+		}
+		.buildingFive{
+			width: 50px;
+			height: 65px;
+			bottom: 52px;
+			left: 360px; 
+		}
+		.trunkTwo{
+			width: 1px;
+			height: 15px;
+			background-color: none;
+			position: absolute;
+			bottom: 52px;
+			left: 450px;
+			border-right: 1px solid #538396; 
+			border-left: 1px solid #538396;
+			border-top: 1px solid #538396;
+		}
+		.treeTwo{
+			width: 20px;
+			height: 20px;
+			background-color: none;
+			position: absolute;
+			bottom: 67px;
+			left: 440px;
+			border-radius: 100%;
+			border: 1px solid green;
+		}
+		.buttonLessLeft{
+			width: 15px;
+			height: 5px;
+			background-color: #131134;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+		}
+		[class^='buttonCircle']{
+			width: 50px;
+			height: 50px;
+			background-color: #131134;
+			border-radius: 100%;
+			position: absolute;
+			cursor: pointer;
+			box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+		}
+		.buttonCircleLeft{
+			top: 50px;
+			left: 25px;
+		}
+		.buttonCircleRight{
+			top: 160px;
+			left: 25px;
+		}
+		[class^='buttons-']{
+			width: 20px;
+			height: 20px;
+			background-color: #131134;
+			border-radius: 100%;
+			position: absolute;
+			cursor: pointer;
+			display: flex;;
+			justify-content: center;
+			align-items: center;;
+		}
+		.buttons-TopLeft{
+			top: 140px;
+			left: 40px;
+		}
+		.buttons-LeftLeft{
+			top: 160px;
+			left: 20px;
+		}
+		.buttons-RightLeft{
+			top: 160px;
+			left: 60px;
+		}
+		.buttons-BottomLeft{
+			top: 180px;
+			left: 40px;
+		}
+		.buttonMoreYRight{
+			width: 15px;
+			height: 5px;
+			background-color: #131134;
+			position: absolute;
+			top: 20px;
+			left:  20px;
+			cursor: pointer;
+		}
+		.buttonMoreXRight{
+			width: 15px;
+			height: 5px;
+			background-color: #131134;
+			position: absolute;
+			top: 20px;
+			left:  20px;
+			transform: rotate(90deg);
+			cursor: pointer;
+		}
+		.buttons-TopRight{
+			top: 60px;
+			left: 40px;
+		}
+		.buttons-LeftRight{
+			top: 80px;
+			left: 20px;
+		}
+		.buttons-BottomRight{
+			top: 100px;
+			left: 40px;
+		}
+		.buttons-RightRight{
+			top: 80px;
+			left: 60px;
+		}
+		.boxSmall{
+			width: 15px;
+			height: 15px;
+			background-color: #131134;
+			position: absolute;
+			right: 10px;
+			bottom: 40px;
+			border-radius: 5px;
+		}
+		.circleSmall{
+			width: 15px;
+			height: 15px;
+			background-color: #131134;
+			position: absolute;
+			left: 10px;
+			bottom: 40px;
+			border-radius: 100%;
+		}
+		.fa-car-side{
+			color: rgba(255,255,255,0.5);
+			font-size: 20px;
+			position: absolute;
+			left: 10px;
+			/*animation: run 5s linear infinite;*/
+		}
+		@keyframes run {
+			from{
+				transform: translateX(0);
+			}
+			to{
+				transform: translateX(500px);
+			}
+		}
+		.fa-cloud{
+			color: rgba(255,255,255,0.5);
+			font-size: 35px;
+			position: absolute;
+		}
+		.cloudOne{
+			top: 40px;
+			left: 30px;
+		}
+		.cloudTwo{
+			top: 70px;
+			right: 50px;
+		}
+		.cloudThree{
+			top: 50px;
+			left:  150px;
+		}
+		.cloudFour{
+			top: 20px;
+			right: 150px;
+		}
+		.door{
+			width: 30%;
+			height: 15px;
+			background-color: none;
+			position: absolute;
+			bottom: 0;
+			left: 5px;
+			border: 0.5px solid #538396;
+		}
+		[class^='windows']{
+			width: 20%;
+			height: 10px;
+			background-color: none;
+			position: absolute;
+			border: 0.5px solid #538396;
+		}
+		.windowsTwo{
+			bottom: 15px;
+			left: 40px;
+			width: 15%;
+		}
+		.windowsThree{
+			bottom: 15px;
+			left: 57px;
+			width: 15%;
+		}
+		.windowsFour{
+			bottom: 5px;
+			left: 5px;
+		}
+		.windowsFive{
+			bottom: 20px;
+			left: 5px;
+		}
+		.windowsSix{
+			bottom: 35px;
+			left: 5px;
+		}
+		.windowsSeven{
+			bottom: 50px;
+			left: 5px;
+		}
+		.windowsEight{
+			bottom: 65px;
+			left: 5px;
+		}
+		.windowsNine{
+			bottom: 80px;
+			left: 5px;
+		}
+		.windowsTen{
+			bottom: 5px;
+			left: 20px;
+		}
+		.windowsEleven{
+			bottom: 20px;
+			left: 20px;
+		}
+		.windowsTwelve{
+			bottom: 35px;
+			left: 20px;
+		}
+		.windowsThirteen{
+			bottom: 50px;
+			left: 20px;
+		}
+		.windowsFourteen{
+			bottom: 65px;
+			left: 20px;
+		}
+		.windowsFiveteen{
+			bottom: 80px;
+			left: 20px;
+		}
+		.windowsSixteen{
+			bottom: 5px;
+			left: 35px;
+		}
+		.windowsSeventeen{
+			bottom: 20px;
+			left: 35px;
+		}
+		.windowsEightteen{
+			bottom: 35px;
+			left: 35px;
+		}
+		.windowsNineteen{
+			bottom: 50px;
+			left: 35px;
+		}
+		.windowsTwenty{
+			bottom: 65px;
+			left: 35px;
+		}
+		.windowsTwentyone{
+			bottom: 80px;
+			left: 35px;
+		}
+		.windowsTwentytwo{
+			bottom: 5px;
+			left: 5px;
+		}
+		.windowsTwentythree{
+			bottom: 20px;
+			left: 5px;
+		}
+		.windowsTwentyfour{
+			bottom: 35px;
+			left: 5px;
+		}
+		.windowsTwentyfive{
+			bottom: 50px;
+			left: 5px;
+		}
+		.windowsTwentysix{
+			bottom: 5px;
+			left: 20px;
+		}
+		.windowsTwentyseven{
+			bottom: 20px;
+			left: 20px;
+		}
+		.windowsTwentyeight{
+			bottom: 35px;
+			left: 20px;
+		}
+		.windowsTwentynine{
+			bottom: 50px;
+			left: 20px;
+		}
+		.windowsThirty{
+			bottom: 5px;
+			left: 35px;
+		}
+		.windowsThirtyone{
+			bottom: 20px;
+			left: 35px;
+		}
+		.windowsThirtytwo{
+			bottom: 35px;
+			left: 35px;
+		}
+		.windowsThirtythree{
+			bottom: 50px;
+			left: 35px;
+		}
+		.windowsThirtyfour{
+			bottom: 5px;
+			left: 5px;
+		}
+		.windowsThirtyfive{
+			bottom: 20px;
+			left: 5px;
+		}
+		.windowsThirtysix{
+			bottom: 35px;
+			left: 5px;
+		}
+		.windowsThirtyseven{
+			bottom: 50px;
+			left: 5px;
+		}
+		.windowsThirtyeight{
+			bottom: 65px;
+			left: 5px;
+		}
+		.windowsThirtynine{
+			bottom: 80px;
+			left: 5px;
+		}
+		.windowsForty{
+			bottom: 5px;
+			left: 20px;
+		}
+		.windowsFortyone{
+			bottom: 20px;
+			left: 20px;
+		}
+		.windowsFortytwo{
+			bottom: 35px;
+			left: 20px;
+		}
+		.windowsFortythree{
+			bottom: 50px;
+			left: 20px;
+		}
+		.windowsFortyfour{
+			bottom: 65px;
+			left: 20px;
+		}
+		.windowsFortyfive{
+			bottom: 80px;
+			left: 20px;
+		}
+		.windowsFortysix{
+			bottom: 5px;
+			left: 5px;
+		}
+		.windowsFortyseven{
+			bottom: 20px;
+			left: 5px;
+		}
+		.windowsFortyeight{
+			bottom: 35px;
+			left: 5px;
+		}
+		.windowsFortynine{
+			bottom: 50px;
+			left: 5px;
+		}
+		.windowsFifty{
+			bottom: 5px;
+			left: 20px;
+		}
+		.windowsFiftyone{
+			bottom: 20px;
+			left: 20px;
+		}
+		.windowsFiftytwo{
+			bottom: 35px;
+			left: 20px;
+		}
+		.windowsFiftythree{
+			bottom: 50px;
+			left: 20px;
+		}
+		.windowsFiftyfour{
+			bottom: 5px;
+			left: 35px;
+		}
+		.windowsFiftyfive{
+			bottom: 20px;
+			left: 35px;
+		}
+		.windowsFiftysix{
+			bottom: 35px;
+			left: 35px;
+		}
+		.windowsFiftyseven{
+			bottom: 50px;
+			left: 35px;
+		}
+		.fa-arrow-up,
+		.fa-arrow-left,
+		.fa-arrow-right,
+		.fa-arrow-down,
+		.letter{
+			color: rgba(255,255,255,0.5);
+			font-size: 10px;
+		}
